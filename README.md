@@ -54,6 +54,10 @@ Please cite the Zenodo record (current version):
 
 The paper is also indexed on SSRN (earlier draft): <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6555479>.
 
+## External citations
+
+This preprint has been cited as Han (2026) in Liu et al., **SHINE: A Scalable In-Context Hypernetwork for Mapping Context to LoRA in a Single Pass**, arXiv:2602.06358v2 (May 20, 2026): <https://arxiv.org/html/2602.06358v2>.
+
 ## Code availability
 
 A reference implementation of DeltaNet-LoRA and the training scripts used to generate the §5 results are maintained by the author and may be made available on request. Contact: `madmax0404@maxandomnis.com`.
