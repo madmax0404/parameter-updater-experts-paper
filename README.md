@@ -56,7 +56,7 @@ The paper is also indexed on SSRN (earlier draft): <https://papers.ssrn.com/sol3
 
 ## External citations
 
-This preprint has been cited as Han (2026) in Liu et al., **SHINE: A Scalable In-Context Hypernetwork for Mapping Context to LoRA in a Single Pass**, arXiv:2602.06358v2 (May 20, 2026): <https://arxiv.org/html/2602.06358v2>.
+This preprint has been cited as Han (2026) in Liu et al. from Peking University, **SHINE: A Scalable In-Context Hypernetwork for Mapping Context to LoRA in a Single Pass**, which was accepted by ICML 2026, arXiv:2602.06358v2 (May 20, 2026): <https://arxiv.org/html/2602.06358v2>.
 
 ## Code availability
 
