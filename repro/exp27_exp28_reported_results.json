@@ -1,0 +1,44 @@
+{
+  "scope": "Reported end-to-end training results from the private experiment logs. These numbers are not produced by the standalone microbenchmark scripts.",
+  "hardware": "Single NVIDIA RTX Pro 6000 Blackwell 96 GB, as recorded in the experiment reports.",
+  "base_model": "allenai/OLMoE-1B-7B-0125",
+  "task": {
+    "name": "Fixed-template episodic fact retention",
+    "num_facts": 4,
+    "num_queries": 4,
+    "gap_len": 64,
+    "sliding_window": 32,
+    "max_seq_len": 120,
+    "batch_size": 8,
+    "num_steps": 3000,
+    "lora_rank": 4,
+    "random_chance": 0.017857142857142856
+  },
+  "experiment_27_sequential": {
+    "train_time_seconds": 6967.612273454666,
+    "seconds_per_step": 2.3225374244848886,
+    "peak_gpu_gb": 40.15748096,
+    "in_context_accuracy": 1.0,
+    "persistent_accuracy": 0.80125,
+    "capacity_accuracy_at_40_facts": 0.825
+  },
+  "experiment_28_parallel_scan": {
+    "train_time_seconds": 2517.766125202179,
+    "seconds_per_step": 0.839255375067393,
+    "peak_gpu_gb": 40.214760448,
+    "in_context_accuracy": 1.0,
+    "persistent_accuracy": 0.773125,
+    "capacity_accuracy_at_40_facts": 0.775
+  },
+  "derived_speedup": {
+    "train_time_ratio_exp27_over_exp28": 2.7673786710015253,
+    "reported_rounded_speedup": "2.77x"
+  },
+  "caveats": [
+    "Single-seed experiment.",
+    "The result is specific to the short-sequence sliding-window mechanism-isolation benchmark.",
+    "Experiment 27 used the sequential recurrence path with TBPTT detach; experiment 28 used the parallel scan path with full scan backpropagation.",
+    "Capacity rows are noisier than the main accuracy numbers because they come from one accumulation run."
+  ]
+}
+

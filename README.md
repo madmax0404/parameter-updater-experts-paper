@@ -31,6 +31,7 @@ The preprint also presents **DeltaNet-LoRA**, a mechanism-isolation prototype th
 | Path | Contents |
 |---|---|
 | `preprint/` | The preprint PDF (`preprint-v7.pdf`). |
+| `repro/` | Standalone reproduction bundle for the DeltaNet-LoRA parallel-scan equivalence check and recurrence microbenchmark. |
 | `idea/` | Earlier idea-stage documents, including the prior-art novelty analysis (`updater_expert.pdf`). |
 | `prior-arts/` | PDFs of the academic works and patents referenced in the preprint. |
 | `LICENSE.md` | License terms (CC BY-NC-ND 4.0). |
@@ -58,9 +59,24 @@ The paper is also indexed on SSRN (earlier draft): <https://papers.ssrn.com/sol3
 
 This preprint has been cited as Han (2026) in Liu et al. from Peking University, **SHINE: A Scalable In-Context Hypernetwork for Mapping Context to LoRA in a Single Pass**, which was accepted by ICML 2026, arXiv:2602.06358v2 (May 20, 2026): <https://arxiv.org/html/2602.06358v2>.
 
-## Code availability
+## Reproduction Bundle
 
-A reference implementation of DeltaNet-LoRA and the training scripts used to generate the §5 results are maintained by the author and may be made available on request. Contact: `madmax0404@maxandomnis.com`.
+This repository includes a small, standalone reproduction bundle under `repro/`.
+It verifies the gated-lerp parallel-scan algebra used by DeltaNet-LoRA and provides a recurrence-only microbenchmark. It does not publish the full private OLMoE training workspace or reproduce the full experiment-28 training run.
+
+Quick check:
+
+```bash
+python repro/parallel_scan_equivalence.py
+```
+
+For PyTorch installation via this repo metadata:
+
+```bash
+uv sync --extra repro
+```
+
+The full DeltaNet-LoRA training code and experiment scripts are maintained privately by the author and may be made available on request. Contact: `madmax0404@maxandomnis.com`.
 
 ## License
 
