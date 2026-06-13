@@ -76,12 +76,10 @@ For PyTorch installation via this repo metadata:
 uv sync --extra repro
 ```
 
-The full DeltaNet-LoRA training code and experiment scripts are maintained privately by the author and may be made available on request. Contact: `madmax0404@maxandomnis.com`.
+The full DeltaNet-LoRA training code and experiment scripts are maintained privately by the author and may be made available on request.
 
 ## License
 
 This preprint and its supporting materials are licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). You are free to share the material with attribution, but commercial use, derivative works, and adaptations require permission.
-
-The architectural concept described in the preprint is the subject of a provisional patent application in Korea (임시명세서). The license above governs the preprint text and supporting documents only; patent rights are reserved separately.
 
 Contact: `madmax0404@maxandomnis.com`
